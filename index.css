@@ -163,6 +163,25 @@ section a, footer a {
     padding-right: 35px;
 }
 
+.aboutPhoto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.photoOne {
+    margin: 0;
+    height: 45%;
+    width: 45%;
+}
+
+.photoTwo {
+    margin: 0;
+    height: 46%;
+    width: 46%;
+    margin-right: 10px;
+}
+
 footer a {
     padding-top: 35px;
 }
@@ -184,6 +203,24 @@ footer img {
 
     h1 {
         padding: 36vh 10vh 36vh 10vh;
+    }
+
+    .aboutPhoto {
+        display: block;
+        float: left;
+    }
+
+    .photoOne {
+        height: 82.5%;
+        width: 82.5%;
+        margin-left: 20px;
+    }
+
+    .photoTwo {
+        height: 83%;
+        width: 83%;
+        margin-left: 20px;
+        padding: 0;
     }
 
     .project {
