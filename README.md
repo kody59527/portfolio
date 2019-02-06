@@ -1,1 +1,1 @@
-My portfolio website for all of my projects.
+A portfolio website designed in HTML, CSS, JS, and jQuery. It contains infomation about myself, my contact information, my education and experience, and my projects. For projects the portfolio displays my Countries Quiz app, a simple web app to showcase my progress in JavaScript. 
