@@ -1,6 +1,10 @@
+//used for 1s fade in animation on page load
+
 $(function() {
     $('body').removeClass('fade-out');
 });
+
+//autoscroll when link is clicked
 
 function scroll_to() {
     $(".navLink-contact").click(function() {

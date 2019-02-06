@@ -1,3 +1,5 @@
+/* sizing includes margin and padding on all properties*/
+
 * {
     box-sizing: border-box;
 }
@@ -7,6 +9,8 @@
 *:after {
     box-sizing: inherit;
 }
+
+/* body properties include fade in on page load */
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -33,12 +37,22 @@ body.fade-out {
     color: #29C6B2;
 }
 
+/* Links */
+
 a:visited, 
 a:link, 
 .introLink:hover, 
 .introLink:visited {
     color: #5D5D5D;
     text-decoration: none;
+}
+
+a:hover, 
+a:active, 
+.projectLink:hover, 
+.projectLink:active {
+    color: #29C6B2;
+    transition: 0.25s;
 }
 
 .introLink, 
@@ -51,17 +65,11 @@ a:link,
     color: white;
 }
 
-
-.projectSection {
-    background-color: black;
-    color: white;
-    padding-bottom: 10px;
+.navLink project {
+    padding-right: 10px;
 }
 
-.projectDescription {
-    margin-left: 5px;
-    margin-right: 5px;
-}
+/* Arrows */
 
 .arrow-white {
     border-top: 2px solid white;
@@ -71,6 +79,7 @@ a:link,
 .arrow-black {
     border-top: 2px solid black;
     border-right: 2px solid black;
+
     margin-bottom: 10px;
 }
 
@@ -82,14 +91,12 @@ a:link,
     transform: rotate(135deg);
 }
 
-footer {
-    min-height: 200px;
-    padding: 1% 0;
-}
+/* Nav */
 
 nav {
     padding: 5px 0;
     width: 100%;
+
     position: absolute;
     top: 0;
 }
@@ -99,17 +106,7 @@ nav a {
     padding: 20px 25px 0px 10px;
 }  
 
-a:hover, 
-a:active, 
-.projectLink:hover, 
-.projectLink:active {
-    color: #29C6B2;
-    transition: 0.25s;
-}
-
-.navLink project {
-    padding-right: 10px;
-}
+/* Headers */
 
 h1 {
     padding: 75px 10% 10% 10%;
@@ -125,8 +122,23 @@ h1,
 
 h2 {
     font-size: 48px;
+
     margin-top: 0;
     margin-bottom: 0;
+}
+
+/* projects and sections */
+
+.projectSection {
+    background-color: black;
+    color: white;
+    
+    padding-bottom: 10px;
+}
+
+.projectDescription {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 section {
@@ -140,6 +152,12 @@ section.aboutMe {
     margin-left: 10px;
 }
 
+section a {
+    padding-left: 35px;
+}
+
+/* images */
+
 img {
     width: 90%;
     height: 90%;
@@ -150,17 +168,11 @@ img {
     padding-bottom: 20px;
 }
 
-footer p {
-    color: #29C6B2;
-    font-size: 20px;
-}
-
-section a {
-    padding-left: 35px;
-}
-
-section a, footer a {
-    padding-right: 35px;
+.projectScreenshot {
+    height: auto;
+    width: 20vh;
+    padding: 0 20px 0 20px;
+    margin: auto;
 }
 
 .aboutPhoto {
@@ -182,9 +194,7 @@ section a, footer a {
     margin-right: 10px;
 }
 
-footer a {
-    padding-top: 35px;
-}
+/* footer */
 
 footer img {
     display: inline-block;
@@ -192,6 +202,26 @@ footer img {
     width: 48px;
     margin: 0;
 }
+
+section a, footer a {
+    padding-right: 35px;
+}
+
+footer p {
+    color: #29C6B2;
+    font-size: 20px;
+}
+
+footer a {
+    padding-top: 35px;
+}
+
+footer {
+    min-height: 200px;
+    padding: 1% 0;
+}
+
+/* media */
 
 @media only screen and (min-width: 375px) {
     body {
@@ -214,18 +244,18 @@ footer img {
         height: 82.5%;
         width: 82.5%;
         margin-left: 20px;
+        margin-top: 20vh;
     }
 
     .photoTwo {
         height: 83%;
         width: 83%;
         margin-left: 20px;
+        margin-bottom: 25vh;
         padding: 0;
     }
 
     .project {
-        width: 95%;
-        margin-left: 30px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -236,7 +266,7 @@ footer img {
     .projectTitle, 
     .projectDescription, 
     .projectLink, 
-    .exampleScreenshot {
+    .futureScreenshot {
         padding: 0 20px 0 20px;
         margin: auto;
     }
@@ -249,7 +279,61 @@ footer img {
         padding-top: 25px;
     }
 
+    section.aboutMe {
+        margin-right: 10px;
+    }
+
     img {
         margin-right: 30px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .photoOne {
+        margin-top: 10vh;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .photoOne {
+        margin-top: 7vh;
+    }
+
+    .photoTwo {
+        margin-bottom: 1vh;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .photoOne {
+        margin-top: 5vh;
+    }
+
+    .photoTwo {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .start {
+        margin-top: 8vh;
+    }
+
+    .projectScreenshot {
+        width: 25vh;
+    }
+
+    section.aboutMe {
+        padding-top: 10vh;
+    }
+
+    .photoTwo {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .start {
+        margin-top: 12vh;
     }
 }
