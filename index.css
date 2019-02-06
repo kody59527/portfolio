@@ -132,7 +132,7 @@ h2 {
 .projectSection {
     background-color: black;
     color: white;
-    
+
     padding-bottom: 10px;
 }
 
@@ -244,14 +244,14 @@ footer {
         height: 82.5%;
         width: 82.5%;
         margin-left: 20px;
-        margin-top: 20vh;
+        margin-top: 8vh;
     }
 
     .photoTwo {
         height: 83%;
         width: 83%;
         margin-left: 20px;
-        margin-bottom: 25vh;
+        margin-bottom: 10vh;
         padding: 0;
     }
 
@@ -306,7 +306,7 @@ footer {
 
 @media only screen and (min-width: 1000px) {
     .photoOne {
-        margin-top: 5vh;
+        margin-top: 2vh;
     }
 
     .photoTwo {
