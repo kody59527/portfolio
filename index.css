@@ -1,5 +1,3 @@
-/* sizing includes margin and padding on all properties*/
-
 * {
     box-sizing: border-box;
 }
